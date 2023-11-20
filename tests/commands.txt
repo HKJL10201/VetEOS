@@ -1,0 +1,10 @@
+load
+samples/30758713_14_0.wasm
+f
+$func177
+i
+0x16c
+n
+n
+n
+q

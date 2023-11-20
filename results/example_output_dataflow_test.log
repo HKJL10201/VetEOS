@@ -1,0 +1,197 @@
+VetEOS> load
+Please input file path: samples/30758713_14_0.wasm
+Loaded file: samples/30758713_14_0.wasm
+Function available:
+['$func49', '$func50', '$func51', '$func52', '$func53', '$func54', '$func55', '$func56', '$func57', '$func58', '$func59', '$func60', '$func61', '$func62', '$func63', '$func64', '$func65', '$func66', '$func67', '$func68', '$func69', '$func70', '$func71', '$func72', '$func73', '$func74', '$func75', '$func76', '$func77', '$func78', '$func79', '$func80', '$func81', '$func82', '$func83', '$func84', '$func85', '$func86', '$func87', '$func88', '$func89', '$func90', '$func91', '$func92', '$func93', '$func94', '$func95', '$func96', '$func97', '$func98', '$func99', '$func100', '$func101', '$func102', '$func103', '$func104', '$func105', '$func106', '$func107', '$func108', '$func109', '$func110', '$func111', '$func112', '$func113', '$func114', '$func115', '$func116', '$func117', '$func118', '$func119', '$func120', '$func121', '$func122', '$func123', '$func124', '$func125', '$func126', '$func127', '$func128', '$func129', '$func130', '$func131', '$func132', '$func133', '$func134', '$func135', '$func136', '$func137', '$func138', '$func139', '$func140', '$func141', '$func142', '$func143', '$func144', '$func145', '$func146', '$func147', '$func148', '$func149', '$func150', '$func151', '$func152', '$func153', '$func154', '$func155', '$func156', '$func157', '$func158', '$func159', '$func160', '$func161', '$func162', '$func163', 'apply', '$func165', '$func166', '$func167', '$func168', '$func169', '$func170', '$func171', '$func172', '$func173', '$func174', '$func175', '$func176', '$func177', '$func178', '$func179', '$func180', '$func181', '$func182', '$func183', '$func184', '$func185', '$func186', '$func187', '$func188', '$func189', '$func190', '$func191', '$func192', '$func193', '$func194', '$func195']
+VetEOS> f
+Function name: $func177
+─────────────────────────────────────────────────────────────────────────────────────────────
+Function: $func177(i64 i64)
+─────────────────────────────────────────────────────────────────────────────────────────────
+  <block_80_0>
+  0x000  23 00        get_global   %00 = get_global 0()
+  0x002  41 d0 01     i32.const    %01 = #0xD001
+  0x005  6b           i32.sub      %02 = i32.sub(%01, %00)
+  0x006  22 02        tee_local    tee_local 2(%02)
+  0x008  21 03        set_local    set_local 3(%02)
+  0x00a  20 02        get_local    %04 = get_local 2()
+  0x00c  24 00        set_global   set_global 0(%04)
+  0x00e  02 40        block        block()
+  0x010  02 40        block        block()
+  0x012  10 1d        call         %05 = call_to_action_data_size()
+  0x014  22 04        tee_local    tee_local 4(%05)
+  0x016  0d 00        br_if        br_if(%05)
+  <block_80_18>
+  0x018  41 00        i32.const    %07 = #0x0
+  0x01a  21 02        set_local    set_local 2(%07)
+  0x01c  0c 01        br           br()
+  <block_80_187>
+  0x187  20 02        get_local    %61A = get_local 2()
+  0x189  28 02 08     i32.load     %61B = i32.load 2, 8(%61A)
+  0x18c  10 3b        call         call_to_$func59(%61B)
+  <block_80_18e>
+  0x18e  0b           end          end()
+  0x18f  02 40        block        block()
+  0x191  20 04        get_local    %677 = get_local 4()
+  0x193  28 02 00     i32.load     %678 = i32.load 2, 0(%677)
+  0x196  22 06        tee_local    tee_local 6(%678)
+  0x198  45           i32.eqz      %67A = i32.eqz(%678)
+  0x199  0d 00        br_if        br_if(%67A)
+  <block_80_19b>
+---------------------------------------------------------------------------------------------
+  ···
+─────────────────────────────────────────────────────────────────────────────────────────────
+VetEOS> i
+Instruction offset: 0x16c
+─────────────────────────────────────────────────────────────────────────────────────────────
+Function: $func177(i64 i64)
+─────────────────────────────────────────────────────────────────────────────────────────────
+  ···
+---------------------------------------------------------------------------------------------
+  0x143  20 03        get_local    %602 = get_local 3()
+  0x145  20 01        get_local    %603 = get_local 1()
+  0x147  37 03 28     i64.store    i64.store 3, 40(%603, %602)
+  0x14a  20 03        get_local    %604 = get_local 3()
+  0x14c  20 05        get_local    %605 = get_local 5()
+  0x14e  37 03 30     i64.store    i64.store 3, 48(%605, %604)
+  0x151  20 03        get_local    %606 = get_local 3()
+  0x153  20 00        get_local    %607 = get_local 0()
+  0x155  37 03 50     i64.store    i64.store 3, 80(%607, %606)
+  0x158  20 03        get_local    %608 = get_local 3()
+  0x15a  42 00        i64.const    %609 = #0x0
+  0x15c  37 03 40     i64.store    i64.store 3, 64(%609, %608)
+  0x15f  20 03        get_local    %60A = get_local 3()
+  0x161  41 20        i32.const    %60B = #0x20
+  0x163  6a           i32.add      %60C = i32.add(%60B, %60A)
+  0x164  20 03        get_local    %60D = get_local 3()
+  0x166  29 03 88 01  i64.load     %60E = i64.load 3, 136(%60D)
+  0x16a  20 03        get_local    %60F = get_local 3()
+> 0x16c  20 03        get_local    %610 = get_local 3()
+  0x16e  41 f8 00     i32.const    %611 = #0xF800
+  0x171  6a           i32.add      %612 = i32.add(%611, %610)
+  0x172  10 89 01     call         %613 = call_to_$func137(%612, %60F)
+  0x175  22 02        tee_local    tee_local 2(%613)
+  0x177  10 a5 01     call         call_to_$func165(%613, %60E, %60C)
+  0x17a  02 40        block        block()
+  0x17c  20 02        get_local    %615 = get_local 2()
+  0x17e  2d 00 00     i32.load8_u  %616 = i32.load8_u 0, 0(%615)
+  0x181  41 01        i32.const    %617 = #0x1
+  0x183  71           i32.and      %618 = i32.and(%617, %616)
+  0x184  45           i32.eqz      %619 = i32.eqz(%618)
+  0x185  0d 00        br_if        br_if(%619)
+─────────────────────────────────────────────────────────────────────────────────────────────
+VetEOS> n
+─────────────────────────────────────────────────────────────────────────────────────────────
+Function: $func177(i64 i64)
+─────────────────────────────────────────────────────────────────────────────────────────────
+  ···
+---------------------------------------------------------------------------------------------
+  0x143  20 03        get_local    %602 = get_local 3()
+  0x145  20 01        get_local    %603 = get_local 1()
+  0x147  37 03 28     i64.store    i64.store 3, 40(%603, %602)
+  0x14a  20 03        get_local    %604 = get_local 3()
+  0x14c  20 05        get_local    %605 = get_local 5()
+  0x14e  37 03 30     i64.store    i64.store 3, 48(%605, %604)
+  0x151  20 03        get_local    %606 = get_local 3()
+  0x153  20 00        get_local    %607 = get_local 0()
+  0x155  37 03 50     i64.store    i64.store 3, 80(%607, %606)
+  0x158  20 03        get_local    %608 = get_local 3()
+  0x15a  42 00        i64.const    %609 = #0x0
+  0x15c  37 03 40     i64.store    i64.store 3, 64(%609, %608)
+  0x15f  20 03        get_local    %60A = get_local 3()
+  0x161  41 20        i32.const    %60B = #0x20
+  0x163  6a           i32.add      %60C = i32.add(%60B, %60A)
+  0x164  20 03        get_local    %60D = get_local 3()
+  0x166  29 03 88 01  i64.load     %60E = i64.load 3, 136(%60D)
+  0x16a  20 03        get_local    %60F = get_local 3()
+  0x16c  20 03        get_local    %610 = get_local 3()
+  0x16e  41 f8 00     i32.const    %611 = #0xF800
+> 0x171  6a           i32.add      %612 = i32.add(%611, %610)
+  0x172  10 89 01     call         %613 = call_to_$func137(%612, %60F)
+  0x175  22 02        tee_local    tee_local 2(%613)
+  0x177  10 a5 01     call         call_to_$func165(%613, %60E, %60C)
+  0x17a  02 40        block        block()
+  0x17c  20 02        get_local    %615 = get_local 2()
+  0x17e  2d 00 00     i32.load8_u  %616 = i32.load8_u 0, 0(%615)
+  0x181  41 01        i32.const    %617 = #0x1
+  0x183  71           i32.and      %618 = i32.and(%617, %616)
+  0x184  45           i32.eqz      %619 = i32.eqz(%618)
+  0x185  0d 00        br_if        br_if(%619)
+─────────────────────────────────────────────────────────────────────────────────────────────
+VetEOS> n
+─────────────────────────────────────────────────────────────────────────────────────────────
+Function: $func177(i64 i64)
+─────────────────────────────────────────────────────────────────────────────────────────────
+  ···
+---------------------------------------------------------------------------------------------
+  0x143  20 03        get_local    %602 = get_local 3()
+  0x145  20 01        get_local    %603 = get_local 1()
+  0x147  37 03 28     i64.store    i64.store 3, 40(%603, %602)
+  0x14a  20 03        get_local    %604 = get_local 3()
+  0x14c  20 05        get_local    %605 = get_local 5()
+  0x14e  37 03 30     i64.store    i64.store 3, 48(%605, %604)
+  0x151  20 03        get_local    %606 = get_local 3()
+  0x153  20 00        get_local    %607 = get_local 0()
+  0x155  37 03 50     i64.store    i64.store 3, 80(%607, %606)
+  0x158  20 03        get_local    %608 = get_local 3()
+  0x15a  42 00        i64.const    %609 = #0x0
+  0x15c  37 03 40     i64.store    i64.store 3, 64(%609, %608)
+  0x15f  20 03        get_local    %60A = get_local 3()
+  0x161  41 20        i32.const    %60B = #0x20
+  0x163  6a           i32.add      %60C = i32.add(%60B, %60A)
+  0x164  20 03        get_local    %60D = get_local 3()
+  0x166  29 03 88 01  i64.load     %60E = i64.load 3, 136(%60D)
+  0x16a  20 03        get_local    %60F = get_local 3()
+  0x16c  20 03        get_local    %610 = get_local 3()
+  0x16e  41 f8 00     i32.const    %611 = #0xF800
+  0x171  6a           i32.add      %612 = i32.add(%611, %610)
+> 0x172  10 89 01     call         %613 = call_to_$func137(%612, %60F)
+  0x175  22 02        tee_local    tee_local 2(%613)
+  0x177  10 a5 01     call         call_to_$func165(%613, %60E, %60C)
+  0x17a  02 40        block        block()
+  0x17c  20 02        get_local    %615 = get_local 2()
+  0x17e  2d 00 00     i32.load8_u  %616 = i32.load8_u 0, 0(%615)
+  0x181  41 01        i32.const    %617 = #0x1
+  0x183  71           i32.and      %618 = i32.and(%617, %616)
+  0x184  45           i32.eqz      %619 = i32.eqz(%618)
+  0x185  0d 00        br_if        br_if(%619)
+─────────────────────────────────────────────────────────────────────────────────────────────
+VetEOS> n
+─────────────────────────────────────────────────────────────────────────────────────────────
+Function: $func177(i64 i64)
+─────────────────────────────────────────────────────────────────────────────────────────────
+  ···
+---------------------------------------------------------------------------------------------
+  0x145  20 01        get_local    %603 = get_local 1()
+  0x147  37 03 28     i64.store    i64.store 3, 40(%603, %602)
+  0x14a  20 03        get_local    %604 = get_local 3()
+  0x14c  20 05        get_local    %605 = get_local 5()
+  0x14e  37 03 30     i64.store    i64.store 3, 48(%605, %604)
+  0x151  20 03        get_local    %606 = get_local 3()
+  0x153  20 00        get_local    %607 = get_local 0()
+  0x155  37 03 50     i64.store    i64.store 3, 80(%607, %606)
+  0x158  20 03        get_local    %608 = get_local 3()
+  0x15a  42 00        i64.const    %609 = #0x0
+  0x15c  37 03 40     i64.store    i64.store 3, 64(%609, %608)
+  0x15f  20 03        get_local    %60A = get_local 3()
+  0x161  41 20        i32.const    %60B = #0x20
+  0x163  6a           i32.add      %60C = i32.add(%60B, %60A)
+  0x164  20 03        get_local    %60D = get_local 3()
+  0x166  29 03 88 01  i64.load     %60E = i64.load 3, 136(%60D)
+  0x16a  20 03        get_local    %60F = get_local 3()
+  0x16c  20 03        get_local    %610 = get_local 3()
+  0x16e  41 f8 00     i32.const    %611 = #0xF800
+  0x171  6a           i32.add      %612 = i32.add(%611, %610)
+  0x172  10 89 01     call         %613 = call_to_$func137(%612, %60F)
+> 0x175  22 02        tee_local    tee_local 2(%613)
+> 0x177  10 a5 01     call         call_to_$func165(%613, %60E, %60C)
+  0x17a  02 40        block        block()
+  0x17c  20 02        get_local    %615 = get_local 2()
+  0x17e  2d 00 00     i32.load8_u  %616 = i32.load8_u 0, 0(%615)
+  0x181  41 01        i32.const    %617 = #0x1
+  0x183  71           i32.and      %618 = i32.and(%617, %616)
+  0x184  45           i32.eqz      %619 = i32.eqz(%618)
+  0x185  0d 00        br_if        br_if(%619)
+─────────────────────────────────────────────────────────────────────────────────────────────
+VetEOS> q
+Test finished.

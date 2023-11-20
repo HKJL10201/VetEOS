@@ -1,0 +1,45 @@
+Detected Vulnerability Patterns:
+F1 (Revertable):
+apply:
+288: get_local 1 <code>
+290: i64.const 6138663591592764928 <"eosio.token">
+301: i64.ne
+302: br_if 0
+349: get_local 2 <action>
+351: i64.const -3617168760277827584 <"transfer">
+361: i64.ne
+362: br_if 0
+$func174:
+868: i64.const 6138663591592764928 <"eosio.token">
+853: i64.const -3617168760277827584 <"transfer">
+909: i64.const 3617214756542218240 <"active">
+$func159:
+236: call 22 <send_inline>
+
+F2 (Unpredictably Profitable):
+$func96:
+4815: i32.rem_s
+4822: set_local 12
+
+F3 (Information Leakage):
+$func172:
+83: i64.const 4152997948076064768 <"balances">
+95: call 33 <db_find_i64>
+$func185:
+151: call 48 <db_update_i64>
+$func175:
+62: i64.const 4152997948076064768 <"balances">
+74: call 33 <db_find_i64>
+$func184:
+104: call 45 <db_get_i64>
+
+F4 (Causal Inference):
+$func168:
+373: get_local 5 <global state>
+375: get_local 2 <user input>
+377: i32.ne
+378: br_if 0
+
+Result:
+Detected Groundhog Day Vulnerability in file 30758713_14_0.wasm
+Code:1
