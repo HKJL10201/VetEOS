@@ -144,7 +144,7 @@ Total number of files analyzed: 735
 Detected Groundhog Day Vulnerabilities: 735
 ```
 
-If need to dump the log files to `./results/`, modify the line 17 of `./tests/test_GDV_all.sh` to be `output=$(python3 main.py -f "$file" -g -d)`.
+If need to dump the log files to `./results/`, modify the line 24 of `./tests/test_GDV_all.sh` to be `output=$(python3 main.py -f "$file" -g -d)`.
 
 ### Dataflow Analysis Test
 
